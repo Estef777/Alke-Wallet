@@ -50,61 +50,30 @@
           </nav>  
           </section>
 <body> 
-    <div>
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-         <dotlottie-player src="https://lottie.host/48b398ca-6bd8-4a7c-821a-94157f73ace2/2dRWpTy6SV.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-       </div>
+    <main>
+        <!--Saldos Disponibles-->
+  <article>
+    <div class="card mb-3" style="max-width: 23rem;">
+      <div class="card-header"><b>Alke Wallet</b> <img class="card-master" src="../img/MasterdCard icon.png" alt="MasterdCard"</div>
+      <div class="card-body">
+        <h5 class="card-title"> </h5>
+        <p class="card-text">**** **** 1987 </p>
+        <p class="card-info"> Saldos <br><b>$897,987</b></p>
+        <p class="card-vence">Expira <br><b>06/28</b></p>
 
-        <section>
-        <div class="col-md-5"  id="wallet-menu">
-          <h1>Saldos Disponibles</h1>
-          <ul id="balances">
-              <p><strong>USD:</strong> $<span id="usd-balance">77,750.00</span></p>
-              <p><strong>EUR:</strong> €<span id="eur-balance">93,879,832.00</span></p>
-              <p><strong>GBP:</strong> £<span id="gbp-balance">923,849.00</span></p>
-          </ul>
-          <button id="deposit-btn">Depositar</button>
-          <button id="withdraw-btn">Retiro de Fondos</button>
       </div>
-  
-      <div id="deposit-modal" class="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>Depositar</h2>
-              <form id="deposit-form">
-                  <label for="amount">Monto:</label>
-                  <input type="number" id="amount" step="0.01" min="0" required>
-                  <label for="currency">Moneda:</label>
-                  <select id="currency" required>
-                      <option value="USD">USD</option>
-                      <option value="EUR">EUR</option>
-                      <option value="GBP">GBP</option>
-                  </select>
-                  <button type="submit">Depositar</button>
-              </form>
-          </div>
-      </div>
-  
-      <div id="withdraw-modal" class="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>Retiro de Fondos</h2>
-              <form id="withdraw-form">
-                  <label for="amount">Monto:</label>
-                  <input type="number" id="amount" step="0.01" min="0" required>
-                  <label for="currency">Moneda:</label>
-                  <select id="currency" required>
-                      <option value="USD">USD</option>
-                      <option value="EUR">EUR</option>
-                      <option value="GBP">GBP</option>
-                  </select>
-                  <button type="submit">Retiro de Fondos</button>
-                  </button>
-              </form>
-          </div>
-      </div>
-      </section>
+    </div>
+  </article>
+                </section>
+                      
+                <!--Animación Dinero-->
+                <div class="col-6">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
+                    <dotlottie-player src="https://lottie.host/a9132789-af55-4612-9711-9334bfd34523/V5fw5JnrF6.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+                </div>
+        <!--Js-->
     <script src="../Js/Menu.js"></script>
       </main>
     

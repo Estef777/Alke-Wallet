@@ -12,5 +12,14 @@
 button .link{
     color: white;
 
-
 }
+
+.container-con {
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    color: brown;
+    
+}
+
+
