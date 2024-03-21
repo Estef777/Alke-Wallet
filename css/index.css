@@ -1,4 +1,4 @@
-.carousel-inner  {
+.carousel-inner {
     width: 75%;
     height: 75%;
     align-items: center;
@@ -9,17 +9,16 @@
 
 }
 
-button .link{
+button .link {
     color: white;
 
 }
 
 .container-con {
+    width: 100%;
     display: flex;
     justify-content: center;
     font-size: 27px;
     color: brown;
-    
+
 }
-
-
