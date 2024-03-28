@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Movimientos</title>
   <!--fuentes de Google-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,106 @@
   <link rel="stylesheet" href="../css/transactions.css">
 
 </head>
+<section>
+  <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+              <a class="navbar-brand me-auto"  href="#"></a>
+              <img height="100" src="../img/Logo-ALke-wallet.png" class="rounded mx-auto d-block" alt="Logo-ALke-wallet">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Estado de Cuenta
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../HTML/Menu.html">Saldos</a></li>
+                                <li><a class="dropdown-item" href="../HTML/Sendmoney.html">Depositar</a></li>
+                                <li><a class="dropdown-item" href="../HTML/transfermoney.html">Transferir</a></li>
+                                <li><a class="dropdown-item" href="../HTML/Transactions.html">Ultimos Movimientos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../index.html">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+        </section>
 
 <body>
-
-
+<!--últimos movimientos-->
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered border-primary">
+      <thead>
+        <tr>
+          <th scope="col">Últimos Movimientos</th>
+          <th scope="col">Fecha y Hora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: green;">Pago mensual +$80.300</td>
+          <td>25 de marzo -  12:76 hrs.</td>
+        </tr>
+        <tr>
+          <td style="color: red;">Compra en línea -$29.000 </td>
+          <td>25 de marzo -  11:11 hrs.</td>
+        </tr>
+        <tr>
+        <td style="color: green;">Pago  +$26.880</td>
+        <td>24 de marzo -  13:05 hrs.</td>
+        </tr>
+        <tr>
+          <td style="color: red;">Pago Spotify -$3.999</td>
+          <td>23 de marzo -  22:16 hrs.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  </main>
+  
+<!--contacto-->
   <footer>
-
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Acerca de </a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Servicios</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Equipo</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
+        </ul>
+      <p>&copy;2024 Estefanía Muñoz </p>
   </footer>
 
+    <!--Script-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <!--JS Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

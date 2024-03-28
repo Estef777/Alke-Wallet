@@ -1,10 +1,10 @@
 //Primer usuario valido
-const userValido1 = "admin@alkewallet.com";
-const passValida1 = "12345678";
+const userValido1 = "hola@alkewallet.com";
+const passValida1 = "12345";
 
 //Segundo usuario valido
-const userValido2 = "admin2@alkewallet.com";
-const passValida2 = "87654321";
+const userValido2 = "hola2@alkewallet.com";
+const passValida2 = "54321";
 
 //Rescatando datos del form para inicio de sesion
 const formulario = document.getElementById("formLogin");
