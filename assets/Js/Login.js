@@ -11,23 +11,68 @@ const formulario = document.getElementById("formLogin");
 const email = document.getElementById("userEmail");
 const password = document.getElementById("userPassword");
 
-// Función que inicia el inicio de sesión
+
+console.log("cambiosjsprueba", formulario);
+console.log("cambiosjsprueba2lala", email);
+console.log("cambiosjsprueba3password", password);
+
+
+
 function login(e) {
     e.preventDefault();
 
+    console.log("Email introducido:", email.value);
+    console.log("Contraseña introducida:", password.value);
+
     if (email.value === userValido1 && password.value === passValida1) {
         // Si el primer usuario es correcto, dirigirlo al menú principal y almacenar el inicio de sesión en sessionStorage
-        location.href = '../../menu.html';
+        console.log("Iniciando sesión como usuario 1...");
         sessionStorage.setItem("inicioDeSesion", 1);
+        window.location.href = '../../menu.html'; // Redirigir al menú principal
     } else if (email.value === userValido2 && password.value === passValida2) {
         // Si el segundo usuario es correcto, dirigirlo al menú principal y almacenar el inicio de sesión en sessionStorage
-        location.href = '../../menu.html';
+        console.log("Iniciando sesión como usuario 2...");
         sessionStorage.setItem("inicioDeSesion", 2);
+        window.location.href = '../../menu.html'; // Redirigir al menú principal
     } else {
         // Si ninguno de los usuarios es correcto, mostrar un mensaje de error
+        console.log("Correo electrónico y/o contraseña incorrectos");
         alert("Correo electrónico y/o contraseña incorrectos");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// Función que inicia el inicio de sesión
+// function login(e) {
+//     e.preventDefault();
+
+//     if (email.value === userValido1 && password.value === passValida1) {
+//         // Si el primer usuario es correcto, dirigirlo al menú principal y almacenar el inicio de sesión en sessionStorage
+//         location.href = '../../menu.html';
+
+
+
+
+
+//     } else if (email.value === userValido2 && password.value === passValida2) {
+//         // Si el segundo usuario es correcto, dirigirlo al menú principal y almacenar el inicio de sesión en sessionStorage
+//         location.href = '../../menu.html';
+//         sessionStorage.setItem("inicioDeSesion", 2);
+//     } else {
+//         // Si ninguno de los usuarios es correcto, mostrar un mensaje de error
+//         alert("Correo electrónico y/o contraseña incorrectos");
+//     }
+// }
 
 // Ejecutar la función login al enviar el formulario
 formulario.addEventListener("submit", login);
