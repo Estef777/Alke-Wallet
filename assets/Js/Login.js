@@ -17,11 +17,11 @@ function login(e) {
 
     if (email.value === userValido1 && password.value === passValida1) {
         // Si el primer usuario es correcto, dirigirlo al menú principal y almacenar el inicio de sesión en sessionStorage
-        location.href = '../html/menu.html';
+        location.href = 'menu.html';
         sessionStorage.setItem("inicioDeSesion", 1);
     } else if (email.value === userValido2 && password.value === passValida2) {
         // Si el segundo usuario es correcto, dirigirlo al menú principal y almacenar el inicio de sesión en sessionStorage
-        location.href = '../html/menu.html';
+        location.href = 'menu.html';
         sessionStorage.setItem("inicioDeSesion", 2);
     } else {
         // Si ninguno de los usuarios es correcto, mostrar un mensaje de error
